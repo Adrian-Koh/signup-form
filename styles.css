@@ -78,8 +78,28 @@ body {
     text-align: center;
     color: white;
     padding: 10px;
+    font-size: 12px;
 }
 
 .img-credits a {
     color: inherit;
+    
+}
+
+label {
+    font-size: 12px;
+}
+
+button {
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.form-row:first-of-type {
+    margin-top: 30px;
+}
+
+.form-row:last-of-type {
+    margin-bottom: 30px;
 }

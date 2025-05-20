@@ -27,37 +27,74 @@
             <p class="signup-message">
                 You know you want to.
             </p>
-            <form action="" method="post">
+            <form action="" method="get">
                 <legend>Let's do this!</legend>
 
                 <div class="form-row">
                     <div class="input-container">
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="user-firstname">
+                        <input 
+                            type="text" 
+                            id="first-name" 
+                            name="user-firstname" 
+                            minlength="2" 
+                            maxlength="50"
+                            pattern="^[A-Za-z ]*$">
                     </div>
                     <div class="input-container">
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="user-lastname">
+                        <input 
+                            type="text" 
+                            id="last-name" 
+                            name="user-lastname"
+                            minlength="2" 
+                            maxlength="50"
+                            pattern="^[A-Za-z ]*$">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-container">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="user-email">
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="user-email"
+                            minlength="2" 
+                            maxlength="50">
                     </div>
                     <div class="input-container">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="text" id="phone" name="user-phone">
+                        <input 
+                            type="text" 
+                            id="phone" 
+                            name="user-phone"
+                            minlength="10"
+                            maxlength="20"
+                            pattern="^[0-9\+]+[0-9\-\+]{9,20}">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-container">
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="user-password">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="user-password"
+                            minlength="8"
+                            maxlength="50"
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,}$"
+                            required>
                     </div>
                     <div class="input-container">
                         <label for="password-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="password-confirm" name="user-password-confirm">
+                        <input 
+                            type="password" 
+                            id="password-confirm" 
+                            name="user-password-confirm"
+                            minlength="8"
+                            maxlength="50"
+                            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W)(?!.* ).{8,}$"
+                            required>
                     </div>
                 </div>
                 <button type="submit">Create account</button>
