@@ -27,6 +27,9 @@ body {
     background-size: auto 100%;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .form-container {
@@ -34,7 +37,7 @@ body {
     width: 100%;
 }
 
-a {
+.login {
     text-decoration: none;
 }
 
@@ -62,11 +65,21 @@ a {
 
 .logo-text {
     font-family: 'deliusregular';
-    font-weight: 700;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 40px;
     color: white;
 }
 
 .logo-img {
-    width: 25%;
+    width: 20%;
+}
+
+.img-credits {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.img-credits a {
+    color: inherit;
 }
