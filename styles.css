@@ -35,10 +35,13 @@ body {
 .form-container {
     padding: 20px;
     width: 100%;
+    font-family: "Spectral", serif;
 }
 
 .login {
     text-decoration: none;
+    color: #9039da;
+    font-weight: 700;
 }
 
 .input-container {
@@ -91,15 +94,26 @@ label {
 }
 
 button {
-    padding: 5px;
-    margin: 10px 0;
+    padding: 10px;
+    font-weight: 600;
+    margin: 5px 0;
     font-size: 14px;
+    border-radius: 3px;
+    border: 0;
+    background-color: #874ebb;
+    box-shadow: #51306f 3px 3px 10px;
+    color: white;
 }
 
 .form-row:first-of-type {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .form-row:last-of-type {
     margin-bottom: 30px;
 }
+
+.signup-message:last-of-type {
+    margin-bottom: 30px;
+}
+
