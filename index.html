@@ -28,42 +28,45 @@
             </p>
             <p></p>
             <p class="signup-message">
-                You know you want to.
+                You <em>know</em> you want to.
             </p>
             <form action="" method="get">
                 <legend>Let's do this!</legend>
 
                 <div class="form-row">
                     <div class="input-container">
-                        <label for="first-name">FIRST NAME</label>
+                        <label for="first-name">FIRST NAME*</label>
                         <input 
                             type="text" 
                             id="first-name" 
                             name="user-firstname" 
                             minlength="2" 
                             maxlength="50"
-                            pattern="^[A-Za-z ]*$">
+                            pattern="^[A-Za-z ]*$"
+                            required>
                     </div>
                     <div class="input-container">
-                        <label for="last-name">LAST NAME</label>
+                        <label for="last-name">LAST NAME*</label>
                         <input 
                             type="text" 
                             id="last-name" 
                             name="user-lastname"
                             minlength="2" 
                             maxlength="50"
-                            pattern="^[A-Za-z ]*$">
+                            pattern="^[A-Za-z ]*$"
+                            required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-container">
-                        <label for="email">EMAIL</label>
+                        <label for="email">EMAIL*</label>
                         <input 
                             type="email" 
                             id="email" 
                             name="user-email"
                             minlength="2" 
-                            maxlength="50">
+                            maxlength="50"
+                            required>
                     </div>
                     <div class="input-container">
                         <label for="phone">PHONE NUMBER</label>
@@ -78,7 +81,7 @@
                 </div>
                 <div class="form-row">
                     <div class="input-container">
-                        <label for="password">PASSWORD</label>
+                        <label for="password">PASSWORD*</label>
                         <input 
                             type="password" 
                             id="password" 
@@ -89,7 +92,7 @@
                             required>
                     </div>
                     <div class="input-container">
-                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <label for="password-confirm">CONFIRM PASSWORD*</label>
                         <input 
                             type="password" 
                             id="password-confirm" 
@@ -100,8 +103,11 @@
                             required>
                     </div>
                 </div>
+                <p class="remarks">(*) indicates a required field.</p>
+                <p class="remarks">Passwords must match and contain at least 8 characters with an uppercase letter, 
+                    a lowercase letter, a digit and a special character.</p>
                 <button type="submit">Create account</button>
-                <p>Already have an acount? <a href="" class="login">Log in</a></p>
+                <p>Already have an account? <a href="" class="login">Log in</a></p>
             </form>
         </div>
     </div>

@@ -18,6 +18,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .image-container {
@@ -95,8 +97,10 @@ label {
 
 button {
     padding: 10px;
+    width: 50%;
     font-weight: 600;
-    margin: 5px 0;
+    margin-top: 10px;
+    margin-bottom: 2px;
     font-size: 14px;
     border-radius: 3px;
     border: 0;
@@ -110,11 +114,15 @@ button {
 }
 
 .form-row:last-of-type {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .signup-message:last-of-type {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.signup-message {
+    font-weight: 600;
 }
 
 input {
@@ -125,8 +133,15 @@ input {
 
 input:focus {
     border-color: blue;
+    box-shadow: grey 0 0 5px;
 }
 
 input:user-invalid {
     border-color: red;
+}
+
+.remarks {
+    font-size: 12px;
+    margin: 10px auto;
+    line-height: 1;
 }
