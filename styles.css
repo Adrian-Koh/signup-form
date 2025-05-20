@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'deliusregular';
+    src: url('fonts/delius/delius-regular-webfont.woff2') format('woff2'),
+         url('fonts/delius/delius-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+    font-family: 'deliusregular';
+}
