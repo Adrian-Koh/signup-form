@@ -7,6 +7,16 @@
 
 }
 
-h1 {
-    font-family: 'deliusregular';
+.container {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    width: 25vw;
+    height: 100vh;
+    background-image: url(images/ocean.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
