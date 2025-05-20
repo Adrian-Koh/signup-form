@@ -7,16 +7,63 @@
 
 }
 
-.container {
-    width: 500px;
+body {
     display: flex;
     justify-content: center;
 }
 
+.container {
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image-container {
     width: 25vw;
-    height: 100vh;
-    background-image: url(images/ocean.jpg);
+    height: 90vh;
+    background: url(images/ocean.jpg) no-repeat center center;
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.form-container {
+    padding: 20px;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+}
+
+.logo-text {
+    font-family: 'deliusregular';
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+}
+
+.logo-img {
+    width: 20%;
 }
